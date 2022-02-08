@@ -12,18 +12,7 @@ class ApplicationController < ActionController::Base
 
     @currency_hash = @symbols.keys
 
-    @currency_hash.each do |currency|
-
-    
-
-    end
-
-    @currency = @currency_hash.at(0)
-
-
-
     render({ :template=> "currency_templates/convert_first_currency.html.erb"})
  
-
   end
 end

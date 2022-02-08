@@ -1,9 +1,14 @@
 
+<h1>Currency pairs</h1>
 
+<p> Go <a href="/"> back </a></p>
 <ul>
+
 <%=@currency_hash.each do |currency|%> 
        <li>
-       <a href="wikipedia.org"> Convert 1 <%=currency%> to... </a>
+       <a href="/forex/<%=currency%>"> 
+       Convert 1 <%=currency%> to... 
+       </a>
        </li>
        <%end%>
         </ul>
