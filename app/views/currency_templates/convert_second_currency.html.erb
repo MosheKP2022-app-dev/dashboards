@@ -1,0 +1,14 @@
+
+<h1>Convert <%=@first_currency%></h1>
+
+<p> Go <a href="/forex">back</a>.</p>
+<ul>
+
+<%=@currency_hash.each do |second_currency|%> 
+       <li>
+       <a href="/forex/<%=@first_currency%>/<%=second_currency%>"> 
+       Convert 1 <%=@first_currency%> to <%=second_currency%>... 
+       </a>
+       </li>
+       <%end%>
+        </ul>
